@@ -1,0 +1,45 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.4",
+	"appid": "wx281e819778f97d50",
+	"projectname": "%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97%E5%87%BA%E9%A2%98%E5%99%A8",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "群排名",
+					"pathName": "pages/paiming/paiming",
+					"query": "",
+					"scene": "1044",
+					"shareInfo": {
+						"groupName": "测试模拟群0",
+						"shareName": "8IdvumOXlRxM7zcX3Iuyhg4OXuhflgaazFh6-SbJ9rk@cr4dev",
+						"shareKey": "6wcAabgi33iTyomvPSXdO9iOOn7ed2g0LsncejLZdG6K_W2qkY50Hseiki4X6A-DNTkqY5h_CKUKo9SUlkndEA~~"
+					}
+				}
+			]
+		}
+	}
+}
