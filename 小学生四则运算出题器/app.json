@@ -10,11 +10,12 @@
     "pages/suggestion/suggestion",
     "pages/contact/contact",
     "pages/endless/endless",
-    "pages/paiming/paiming"
+    "pages/paiming/paiming",
+    "pages/allpaiming/allpaiming"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#349023",
+    "navigationBarBackgroundColor":"#d5a6bd",
     "navigationBarTitleText": "四则运算练习器",
     "navigationBarTextStyle":"white"
   },
@@ -31,6 +32,12 @@
         "text": "无尽模式",
         "iconPath": "/images/process.png",
         "selectedIconPath": "/images/process_selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/account.png",
+        "selectedIconPath": "/images/account_selected.png"
       }
     ],
     "color": "#515151",

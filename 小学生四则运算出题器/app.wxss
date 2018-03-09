@@ -10,3 +10,6 @@ page{
   word-wrap: break-word;
   word-break: break-all;
 }
+button {
+  background-color: #d5a6bd
+}

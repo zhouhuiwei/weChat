@@ -178,10 +178,22 @@ function calcHaoshi(begin, end) {
     return min + "分" + sec + "秒";
   }
 }
+//睡眠millsecond毫秒
+function sleep(millsecond){
+  let begin=new Date().getTime();
+  let end=0;
+  while(true){
+    end=new Date().getTime();
+    if(end-begin>millsecond){
+      return;
+    }
+  }
+}
 module.exports = {
   formatTime: formatTime,
   getBiaodashi: getBiaodashi,
   calCommonExp: calCommonExp,
   simplyBiaodashi: simplyBiaodashi,
-  calcHaoshi: calcHaoshi
+  calcHaoshi: calcHaoshi,
+  sleep: sleep
 }

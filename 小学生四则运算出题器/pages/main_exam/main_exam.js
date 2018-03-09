@@ -11,7 +11,7 @@ Page({
     timushu: 1,//题目数量
     xioashuwei: 0,//结果的保留的位数
     bt_text: "下一题",
-    biaodashi: "3+2=",
+    biaodashi: "",
     timu: [],//题干
     answer: [],//用户输入结果
     correct_result: [],//正确结果
@@ -28,6 +28,9 @@ Page({
     //用户输入时，记录输入内容
     var input = e.detail.value;
     this.setData({ input: input });
+  },
+  onUnload: function(e){
+    clearInterval(id);
   },
   onLoad: function (option) {
     this.setData({

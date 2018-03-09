@@ -31,5 +31,4 @@ textarea {
 }
 button {
   margin-top: 40rpx;
-  background-color: green;
 }

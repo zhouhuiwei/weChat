@@ -31,7 +31,7 @@ view {
 .title {
   margin-top: 20rpx;
   font-size: 40rpx;
-  color: #349023;
+  color: gray;
   /* background-color: pink; */
   text-align: center;
   width: 100%;
@@ -76,9 +76,6 @@ view {
   width: 96%;
   height: 2rpx;
   background-color: gray;
-}
-button {
-   background-color: #349023; 
 }
 .yunsuanfu {
   position: fixed;

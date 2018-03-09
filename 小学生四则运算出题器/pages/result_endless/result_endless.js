@@ -15,13 +15,22 @@ Page({
     mode:'',//用户选择的模式
     score: 0,//历史最高得分
     time: 0,//在exam模式中，规定的考试时间
-    timushu:0 //在exam模式中规定的题目数量
+    timushu:0, //在exam模式中规定的题目数量
+    xishu: 0,//根据难度等级，得到得分系数
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //根据难度等级，计算得分系数
+    if(options.grade==='easy'){
+      this.setData({xishu:1,mode:'简单'});
+    } else if (options.grade === 'normal'){
+      this.setData({ xishu: 2 ,mode:'一般'});
+    }else{
+      this.setData({ xishu: 3 ,mode:'困难'});
+    }
     var that=this;
     var app = getApp();
     this.setData({ headImage: app.globalData.userInfo.avatarUrl });
@@ -50,7 +59,19 @@ Page({
     }else {
       this.setData({ score: score });
     }
-
+    //将本次得分上传服务器
+    let cs={};
+    cs['openID']=getApp().globalData.secret.openid;
+    cs['score']=this.data.correct_num;
+    wx.request({
+      url: getApp().globalData.host + "InsertScoreszys",
+      data: cs,
+      method: 'POST',
+      header: { 'content-type': "application/x-www-form-urlencoded" },
+      success: function (e) {
+        console.log(e.data);
+      }
+    });//end of 本次得分上传服务器
   },
   
   calcCorrectNum: function(result){

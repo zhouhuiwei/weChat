@@ -1,6 +1,6 @@
 // pages/my/my.js
 var app=getApp();
-var hongbao=require('../../template/hongbao.js');
+
 Page({
 
   /**
@@ -18,6 +18,7 @@ Page({
   onLoad: function (options) {
     console.log(app.globalData);
     this.setData({ headUrl: app.globalData.userInfo.avatarUrl,username: app.globalData.userInfo.nickName});
+    
   },
 
   paiming: function(e) {
@@ -43,5 +44,5 @@ Page({
       }
     }
   },
-  hongbaoClick: hongbao.hongbaoClick
+  
 })

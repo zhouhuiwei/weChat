@@ -1,7 +1,7 @@
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
   <view class='head'><image src="{{headImage}}"></image></view>
   <view class='title'>结果报告</view>
-  <view class='description'>您在无尽模式中，用时{{haoshi}}，共得到{{correct_num}}分，历史最高得分为{{score}}。{{comment}}</view>
+  <view class='description'>您在无尽{{mode}}模式中，用时{{haoshi}}，共得到{{correct_num*xishu}}分，历史最高得分为{{score}}。{{comment}}</view>
   <!--结果报表-->
   <view>
     <view class='timu'>题目</view>

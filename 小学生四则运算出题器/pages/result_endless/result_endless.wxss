@@ -44,6 +44,5 @@
   margin-left: auto;
 }
 button {
-  background-color: gray;
   margin-top: 10rpx;
 }

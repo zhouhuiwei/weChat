@@ -117,4 +117,4 @@
     </view>
   </view>
 </view>
-<view wx:else>请联系微信号:pangxiebiancheng，获取授权</view>
+<view wx:else></view>
