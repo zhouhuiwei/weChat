@@ -25,7 +25,7 @@ Page({
   },
   copy: function(e) {
     wx.setClipboardData({
-      data: 'pangxiebiancheng',
+      data: 'zhou',
       success: function(e) {
         wx.showToast({
           title: '复制成功，请用微信搜索联系人',
